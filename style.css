@@ -1,0 +1,146 @@
+:root {
+  /*    ### Primary
+
+    - Pale blue: hsl(225, 100%, 94%)
+    - Bright blue: hsl(245, 75%, 52%)
+    
+    ### Neutral
+    
+    - Very pale blue: hsl(225, 100%, 98%)
+    - Desaturated blue: hsl(224, 23%, 55%)
+    - Dark blue: hsl(223, 47%, 23%)
+*/
+  --primary-color: hsl(245, 75%, 52%);
+  --background-color: hsl(225, 100%, 94%);
+  --secondary: #1260f0;
+  --text-color-dark: #1f2f56;
+  --text-color-light: hsl(224, 23%, 55%);
+  --container-background: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color, #f0eeee);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display";
+}
+
+.container {
+  max-width: 375px;
+  background-color: var(--container-background, #ffffff);
+  margin: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.hero-image {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.order-header {
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.plan-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--text-color-light, #8dafee);
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 2rem 2.5rem 2rem;
+}
+
+.btn-note {
+  border-radius: 3rem;
+  color: var(--text-color-dark #1f2f56);
+  background-color: var(--background-color, #f0eeee);
+  border: none;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.plan-type {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.plan-amount {
+  color: var(--text-color-light, #8dafee);
+  font-size: 1rem;
+}
+
+.btn-change {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  border: none;
+  background-color: var(--container-background, #ffffff);
+}
+
+.btn-change:hover {
+  cursor: pointer;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-pay {
+  background-color: var(--primary-color, #1151f3);
+  color: var(--container-background, #ffffff);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 2rem 2rem 2rem;
+  border-radius: 1rem;
+  padding: 0.75rem 0 0.75rem 0;
+}
+
+.btn-change:hover {
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: var(--container-background, #ffffff);
+  border: none;
+  color: var(--text-color-dark, #1f2f56);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 2rem 2rem 2rem;
+  /*  padding: 0.75rem 0 0.75rem 0; */
+}
+
+.btn-change:hover,
+.btn-pay:hover,
+.btn-cancel:hover {
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
